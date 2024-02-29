@@ -1,0 +1,61 @@
+{
+    "API_KEY": "YOUR_API_KEY",
+    "API_SECRET": "YOUR_API_SECRET",
+    "API_KEY_TEST": "YOUR_TEST_API_KEY",
+    "API_SECRET_TEST": "YOUR_TEST_API_SECRET",
+    "TEST_EXCHANGE": false,
+    "DRY_RUN": false,
+    "ONLY_SELL": false,
+    "ONLY_BUY": true,
+    "ORDER_LABEL": "options_mm",
+    "CURRENCY": "BTC",
+    "LOG_LEVEL": "INFO",
+    "MIN_LOOP_TIME": 6,
+    "MAX_QUOTES_OPEN": 5,
+    "MAX_PRODUCTS_PRICING": 75,
+    "MAX_SP_PRICING": 3,
+    "MIN_SP_PRICING": -0.1,
+    "MIN_TRADE_MULT": 1,
+    "RISK_LIMITS": {
+        "MAX_NET_DELTA": 0.5,
+        "MAX_TOT_SIZE_OPTIONS_SHORT": 1,
+        "MAX_TOT_SIZE_OPTIONS_LONG": 1,
+        "TOT_POSITION_LIMIT": 1,
+        "TOT_POSITION_LIMIT_TEST": 1000
+    },
+    "TRADE_SETTINGS": {
+        "BTC-21FEB24": {
+            "ON": true,
+            "VOL_MODELLING": {
+                "ATM": 30,
+                "MULT": {
+                    "-6": 240,
+                    "-5": 195,
+                    "-4": 175,
+                    "-3": 152,
+                    "-2": 125,
+                    "-1": 107,
+                    "-.5":100,
+                    "0": 100,
+                    ".5": 105,
+                    "1": 112,
+                    "2": 131,
+                    "3": 152,
+                    "4": 175,
+                    "5": 195,
+                    "6": 240
+                }
+            },
+            "SKEW": {
+                "50250": 0
+            },
+            "SPREAD": {
+                "DELTA": 2,
+                "GAMMA": 0,
+                "VEGA": 0,
+                "RHO": 0,
+                "BASE": 0.0002
+            }
+        }
+    }
+}
